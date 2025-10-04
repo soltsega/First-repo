@@ -12,6 +12,6 @@ function Output() {
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-
+    <Output />
   </StrictMode>,
 )
