@@ -1,111 +1,40 @@
 import './App.css'
+import Contacts from './contacts.jsx'
+
 
 function App() {
 
   return (
-    <>
-      {/* The first person */}
-      <div className='contacts'>
-        <article className='contact-card'>
-          <img src=''
-            alt=''
-          />
-          <h3>Mr. Whiskerson</h3>
+    <div className='contacts'>
 
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>+251938235449</p>
-          </div>
+      <Contacts
+        img="./src/whiskerson.png"
+        name="Mr. Whiskerson"
+        phone="0932726376"
+        email="whiskerson@gmail.com"
+      />
 
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>whisker@gmail.com</p>
-          </div>
-        </article>
-      </div>
+      <Contacts
+        img="./src/pumpkin.png"
+        name="Mr. Pumpkin"
+        phone="0932726376"
+        email="pumpkin@gmail.com" />
 
-      {/* The socond person */}
-      <div className='contacts'>
-        <article className='contact-card'>
-          <img src=''
-            alt=''
-          />
-          <h3>Mr. Fluffykins</h3>
+      <Contacts
+        img="./src/felix1.png"
+        name="Mr. Felix"
+        phone="0932726376"
+        email="felix@gmail.com"
+      />
 
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>+251938235449</p>
-          </div>
+      <Contacts
+        img="./src/fluffykins.png"
+        name="Mr. Fluffykins"
+        phone="0932726376"
+        email="fluffykins@gmail.com"
+      />
 
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>fluff@gmail.com</p>
-          </div>
-        </article>
-      </div>
-
-      <div className='contacts'>
-        <article className='contact-card'>
-          <img src=''
-            alt=''
-          />
-          <h3>Mr. Felix</h3>
-
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>+251938235449</p>
-          </div>
-
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>felix@gmail.com</p>
-          </div>
-        </article>
-      </div>
-
-      <div className='contacts'>
-        <article className='contact-card'>
-          <img src=''
-            alt=''
-          />
-          <h3>Mr. Pumpkin</h3>
-
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>+251938235449</p>
-          </div>
-
-          <div className='info-group'>
-            <img
-              src=''
-              alt=''
-            />
-            <p>pumpkin@gmail.com</p>
-          </div>
-        </article>
-      </div>
-    </>
+    </div>
   )
 }
 
