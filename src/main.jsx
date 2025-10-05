@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Header from './header.jsx'
+import Footer from './footer.jsx'
 
 
 function Output() {
@@ -9,8 +11,7 @@ function Output() {
   const lastName = "Tsega";
   return (
     <>
-      <h1>This is my first repo</h1>
-      <p>My name is {firstName} {lastName}.</p>
+      {/* <p>My name is {firstName} {lastName}.</p> */}
     </>
   )
 }
@@ -36,10 +37,21 @@ function Day() {
 }
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Output />
-    <Day />
-    <App />
+  <StrictMode >
+    <div className='main'>
+      <div className='header'>
+        <Header />
+        <Output />
+        <Day />
+      </div>
 
+      <div className='app'>
+        <App />
+      </div>
+
+      <div className='footer'>
+        <Footer />
+      </div>
+    </div>
   </StrictMode>,
 )
