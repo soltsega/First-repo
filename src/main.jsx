@@ -16,42 +16,11 @@ function Output() {
   )
 }
 
-function Day() {
-  const hours = new Date().getHours()
-  let timeOfDay;
 
-
-  if (hours < 12) {
-    timeOfDay = "morning"
-  } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "afternoon";
-  } else if (hours < 21) {
-    timeOfDay = "evening";
-  } else {
-    timeOfDay = "night";
-  }
-
-  return (
-    <h1>Good {timeOfDay}🤗</h1>
-  )
-}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode >
-    <div className='main'>
-      <div className='header'>
-        <Header />
-        <Output />
-        <Day />
-      </div>
+    <App />
 
-      <div className='app'>
-        <App />
-      </div>
-
-      <div className='footer'>
-        <Footer />
-      </div>
-    </div>
   </StrictMode>,
 )
