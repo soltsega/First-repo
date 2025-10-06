@@ -1,12 +1,34 @@
 import './App.css'
 import Contacts from './contacts.jsx'
+import React from 'react'
+import Header from './header.jsx'
+import Footer from './footer.jsx'
+
+function Day() {
+  const hours = new Date().getHours()
+  let timeOfDay;
 
 
+  if (hours < 12) {
+    timeOfDay = "morning"
+  } else if (hours >= 12 && hours < 17) {
+    timeOfDay = "afternoon";
+  } else if (hours < 21) {
+    timeOfDay = "evening";
+  } else {
+    timeOfDay = "night";
+  }
+
+  return (
+    <h1>Good {timeOfDay}🤗</h1>
+  )
+}
 function App() {
 
   return (
     <div className='contacts'>
-
+      <Header />
+      <Day />
       <Contacts
         img="./src/whiskerson.png"
         name="Mr. Whiskerson"
@@ -33,7 +55,7 @@ function App() {
         phone="0932726376"
         email="fluffykins@gmail.com"
       />
-
+      <Footer />
     </div>
   )
 }
