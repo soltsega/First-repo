@@ -1,4 +1,3 @@
-#include <iostream>
 using namespace std;
 int main()
 {
@@ -8,5 +7,6 @@ int main()
         double balance;
         double interestRate;
         int term;
-    } return 0;
+    };
+    return 0;
 }
